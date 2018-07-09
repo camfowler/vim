@@ -112,3 +112,15 @@ if [ -n "$old_plugs" ]; then
   echo $old_plugs | xargs rm -rf
 fi
 
+#Add all gits as submodules.
+#First we move to the git root, then search all repos under pack, then go back to pack just to be neat.
+cd $(git rev-parse --show-toplevel)
+for x in $(find ./pack -type d) ; do
+    if [ -d "${x}/.git" ] ; then
+        cd "${x}"
+        origin="$(git config --get remote.origin.url)"
+        cd - 1>/dev/null
+        git submodule add -f "${origin}" "${x}"
+    fi
+done
+cd pack
