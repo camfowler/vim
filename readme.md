@@ -1,0 +1,1 @@
+This is a simple script that uses vim 8+'s ingrained package management system together with addons. The comments on the script explain how to use it on their own.
