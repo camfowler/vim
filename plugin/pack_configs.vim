@@ -98,7 +98,7 @@ let g:go_fmt_command = "goimports"
 " tpope/vim-markdown
 " ==================
 
-let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml']
+let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'bash']
 
 
 

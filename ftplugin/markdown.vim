@@ -9,7 +9,7 @@ setlocal textwidth=0 wrapmargin=0
 set linebreak breakindent
 
 " Conceal even cursor is on that line in normal mode.
-set concealcursor=n
+" set concealcursor=n
 " Conceal characters unless there is a defined replacement.
 set conceallevel=2
 
