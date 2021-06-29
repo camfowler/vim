@@ -21,5 +21,7 @@ iabbrev calvc60 [Here is my availability](https://calendly.com/cameron-fowler/vi
 iabbrev calchch [Here is my availability](https://calendly.com/cameron-fowler/catch-up-christchurch), feel free to book a time that suits you best.
 iabbrev calwlg [Here is my availability](https://calendly.com/cameron-fowler/catch-up-wellington), feel free to book a time that suits you best.
 
+iabbrev <expr> dts strftime("%A %d %B")
+
 nmap <leader>c :w !pandoc -t rtf -s \| pbcopy<CR>
 vmap <leader>c :'<,'>w !pandoc -t rtf -s \| pbcopy<CR>
