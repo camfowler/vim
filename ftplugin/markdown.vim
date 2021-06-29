@@ -14,3 +14,12 @@ set linebreak breakindent
 set conceallevel=2
 
 setlocal includeexpr=substitute(v:fname,'^/','','')
+
+iabbrev cc Cheers,Cameron
+iabbrev calvc45 [Here is my availability](https://calendly.com/cameron-fowler/video-call-45), feel free to book a time that suits you best.
+iabbrev calvc60 [Here is my availability](https://calendly.com/cameron-fowler/video-call-60), feel free to book a time that suits you best.
+iabbrev calchch [Here is my availability](https://calendly.com/cameron-fowler/catch-up-christchurch), feel free to book a time that suits you best.
+iabbrev calwlg [Here is my availability](https://calendly.com/cameron-fowler/catch-up-wellington), feel free to book a time that suits you best.
+
+nmap <leader>c :w !pandoc -t rtf -s \| pbcopy<CR>
+vmap <leader>c :'<,'>w !pandoc -t rtf -s \| pbcopy<CR>
