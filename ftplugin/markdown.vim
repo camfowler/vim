@@ -23,4 +23,4 @@ iabbrev calwlg [Here is my availability](https://calendly.com/cameron-fowler/cat
 
 iabbrev <expr> dts strftime("%A %d %B")
 
-map <leader>c :w !pandoc -t rtf -s \| pbcopy<CR>
+map <leader>y :w !pandoc -t rtf -s \| pbcopy<CR>
